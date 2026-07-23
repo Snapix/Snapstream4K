@@ -1,0 +1,6 @@
+{
+  "name": "Snapstream4K",
+  "description": "High-performance OTT streaming application.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

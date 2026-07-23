@@ -1,0 +1,10 @@
+import WebTorrent from 'webtorrent';
+const client = new WebTorrent();
+const mag = 'magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10';
+const infoHash = '08ada5a7a6183aae1e09d831df6748d566095a10';
+const t = client.add(mag);
+console.log("torrents length:", client.torrents.length);
+console.log("infoHash:", t.infoHash);
+const t2 = client.get(infoHash);
+console.log("t2:", !!t2);
+client.destroy();
